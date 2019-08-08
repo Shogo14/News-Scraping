@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header{
+  width:100%;
+  top:0;
+  margin: 0 auto;
+  height: 65px;
+  /* background-color: rgba(34, 49, 52, 0.9); */
+  background: rgb(77, 3, 252,0.9); /*背景色も好みに応じにて調節してください。*/
+  position: fixed;
+  z-index: 10;
+  padding:0 20px;
+  color: white;
+  line-height: 65px;
+}
+.site-title{
+  font-size: 30px;
+}
+.header-title{
+  float: left;
+}
+.menu-list{
+  float:right;
+  margin-right:15px;
+}
+.menu-list a,.menu-list div{
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+.header-login{
+  color:rgb(51, 255, 0);
+  cursor: pointer;
+  
+}
+.menu-list a:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-list div:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  color:white;
+}
+.tab_wrapper{
+  margin-top: 80px;
+  /* background-color: rgba(187, 198, 199, 0.829); */
+}
+
+.top-wrapper{
+  margin-top: 80px;
+  background-color: rgba(187, 198, 199, 0.829);
+  /* background-image: url(../img/newsPaperImg.jpg); */
+  background-image: url(../img/newsPaperImg2.jpg);
+  /* background-image: url(../img/newsPaperImg3.jpg); */
+  
+  background-attachment: fixed;
+  /* background-image: url(../img/newsPaperImg4.jpg); */
+  background-size: cover;
+}
+.topic{
+  width:25%;
+  /* width:calc(100% / 3); */
+  float: left;
+}
+.topic > article{
+  width:90%;
+  border:solid 1px #aaa;
+  border-radius:0.5em;
+  padding-right:10px;
+  padding-left:10px;
+  background-color:white;
+  text-align: center;
+  height: 300px;
+  /* overflow: hidden; */
+  overflow:scroll;
+  margin:5px;
+}
+.container article img{
+  width:auto;
+  height: 50%;
+}
+.clear{
+  clear:left;
+}
+
+ a.jump_link{
+  text-decoration:underline;
+  color:blue;
+}
+
+
+#container {
+  width: 500px;
+  margin: 15px auto;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  padding-bottom: 6px;
+}
+
+.menu-list{
+  float: right;
+}
+.menu-list li{
+  display: inline;
+}
+
+#new_word {
+  padding: 8px;
+  border-radius: 3px;
+  width: 90%;
+  margin: 0 auto 15px;
+  font-size: 16px;
+  /* text-align: center; */
+}
+
+.delete_word {
+  float: right;
+  /* 
+  display: inline-block;
+  color: rgb(46, 42, 42); */
+  cursor: pointer;
+  margin-right:10px;
+}
+
+.hide {
+  text-decoration: line-through;
+}
+/* .done {
+  text-decoration: line-through;
+} */
+/* #todo_template{
+  display: none;
+} */
+#word_template{
+  display: none;
+}
+
+#tab_template{
+  display: none;
+}
+
+
+ul.menu li a.active{
+  background: #353d3e;
+  color:#fff;
+}
+
+ul.menu li a:not(.active):hover{
+  opacity: 0.5;
+  transition: .8s;
+}
+
+.content{
+  font-size: 14px;
+  padding: 7px 10px;
+  line-height: 1.4;
+  color:#fff;
+  min-height: 150px;
+  display: none;
+}
+
+.content.active{
+  display: block;
+  color:#000000;
+}
+
+.col-sm-4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card{
+  max-height: 300px;
+  overflow: auto;
+
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+}
+
+/* タブメニューのデザイン */
+/* .tab_wrap{width:500px; margin:80px auto;} */
+input[type="radio"]{
+  display:none;
+}
+.tab_area{
+  font-size:0; 
+  margin:0 10px;
+}
+
+.tab_area label{
+  width:150px; 
+  margin:0 5px; 
+  display:inline-block; 
+  padding:12px 0; 
+  color:#999; 
+  background:#ddd; 
+  text-align:center; 
+  font-size:13px; 
+  cursor:pointer; 
+  transition:ease 0.2s opacity;
+  user-select:none;
+}
+.tab_area label:hover{
+  opacity:0.5;
+}
+.tab_area .active{
+  background:#fff; 
+  color:#000;
+}
+.panel{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+/* サイドバー */
+.sidebar{
+  position: fixed;
+  color: #fff; /* 好みに応じて調節してください */
+}
+
+.sidebar.left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px; /*この値は調節してください。*/
+  background: #448AFF; /*背景色も好みに応じにて調節してください。*/
+  z-index: 15;
+}
+
+.barOpen{
+  z-index:20;
+  position: fixed;
+  top: 50%;
+  /* left: 275px; */
+  left: 5px;
+  margin: auto;
+  opacity:0.7;
+  color:#032463;
+  transition-duration: 0.2s
+}
+
+.swithOpen{
+  left: 275px;
+  transform: rotate(180deg);
+}
+
+.list_title{
+  text-align: center;
+}
+
+.sidebar span{
+  font-size:20px;
+}
+.sidebar h1{
+  font-size:34px;
+  margin: 10px;
+}
+.sidebar li{
+  margin-left:10px;
+  /* text-align: center; */
+  line-height: 30px;
+  height: 30px;
+}
+span > i{
+  float: right;
+}
+
+.sidebar #new_word_form{
+  text-align: center;
+}
+
+.news_modal_wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display:none; */
+}
+
+.modal {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom:10%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  /* width: 450px; */
+  width:80%;
+  height: 80%;
+  text-align: center;
+  overflow:scroll;
+}
+
+
+/* スクロールバーのデザイン */
+article::-webkit-scrollbar{
+  width: 12px;
+}
+article::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #777; 
+}
+article::-webkit-scrollbar-thumb{
+  background: #aaa;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+@media(max-width:1000px){
+    .topic{
+        width:50%;
+      }
+}
+
+@media(max-width:670px){
+    .topic{
+        width:100%;
+      }
+}
